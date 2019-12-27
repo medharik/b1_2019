@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#menu {
+  height: 50px;
+  text-align: center;
+  background: black;
+}
+/* pour afficher une pub */
+#banner {
+  height: calc(100vh - 50px);
+}
+#about {
+  width: 1000px;
+  min-height: 400px;
+
+  margin: 20px auto;
+}
+
+/* une id CSS : 
+
+
+fdkgl'fk'lxlvffg 
+
+fgdkldfk
+
+gkflgk
+style unique  applicable a un seul element html */
+
+#pied {
+  min-height: 100px;
+}
+/* une classe CSS : style repetitif applicable a plusieurs element html */
+.b {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.ombre {
+  box-shadow: 2px 5px 4px black;
+}
+.pl {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#menu ul {
+  list-style: none;
+}
+
+#menu ul li {
+  display: inline-block;
+}
+
+#menu ul li a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: rgb(179, 172, 172);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+#menu a:hover {
+  color: white;
+  transition: 0.1s;
+  border-bottom: 2px solid white;
+}
