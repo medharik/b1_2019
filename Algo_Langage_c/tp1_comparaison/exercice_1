@@ -1,0 +1,37 @@
+ALGO & LANGAGE C 
+
+Exercice : 
+Algo :
+Proposer  un Algotithme permettant de saisir deux nombres entiers et de les comparer 
+
+Exemple d'execution : 
+Entrer a :
+120
+Entrer b :
+30
+
+120 est plus grande que 30
+
+Langage C :
+Editer en langage c , un programme permettant de saisir deux nombres a et b et de les comparer 
+// variable : une zone memoire (nommees ) pour stocker des valeurs 
+Algo : 
+//declration des variables : 
+var a, b : entiers ;
+
+afficher_ecran("Entrer  a : ");//ecrire
+enregistre_clavier(a);// lire(a)
+
+afficher_ecran("Entrer  b : ");
+entrgistre_clavier(b);
+
+si (a>b) alors 
+debut
+
+afficher_ecran("a est plus grande que b");
+sinon 
+afficher_ecran("b est plus grande que a");
+
+fin si
+
+
