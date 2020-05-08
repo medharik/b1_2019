@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>les bases du javascript : instructions de controle (if)</title>
+  </head>
+  <body>
+    <form action="">
+      Produit :
+      <select id="produit" onchange="afficher()">
+        <option value=""></option>
+        <option value="PC PORTABLE">PC PORTABLE</option>
+        <option value="PC DESKTOP">PC DESKTOP</option>
+      </select>
+
+      <button type="button" onclick="afficher()">Afficher</button>
+    </form>
+    <img id="tof" src="" width="200" />
+    <div id="resultat"></div>
+
+    <script>
+      function afficher() {
+        let champs_produit = document.getElementById("produit");
+        let resultat = document.getElementById("resultat");
+        let tof = document.getElementById("tof");
+        // alert("le produit est " + champs_produit.value);
+        resultat.innerHTML = champs_produit.value;
+        if (champs_produit.value == "PC PORTABLE") {
+          tof.src = "images/hp1.jpg";
+        } else if (champs_produit.value == "PC DESKTOP") {
+          tof.src = "images/dhp1.jpg";
+        } else {
+          tof.src = "";
+        }
+      }
+    </script>
+  </body>
+</html>

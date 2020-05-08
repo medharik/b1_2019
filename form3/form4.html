@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form & tableaux</title>
+  </head>
+  <body>
+    <marquee
+      style="color: white; background: red;"
+      onmouseover="stop()"
+      onmouseout="start()"
+      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsa
+      pariatur facere, fuga ut ipsam a error dolor aliquid esse labore fugit
+      maxime libero necessitatibus, dolorum autem odio, quos nam?</marquee
+    >
+    <form action="">
+      <table border="0" align="center">
+        <tr>
+          <td>Nombre 1 :</td>
+          <td><input type="number" id="n1" /></td>
+        </tr>
+        <tr>
+          <td>Nombre 2 :</td>
+          <td><input type="number" id="n2" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button onclick="caluler_produit()">Valider</button></td>
+        </tr>
+      </table>
+    </form>
+
+    <hr />
+    <form action="">
+      <table>
+        <tr>
+          <td>Age :</td>
+          <td><input type="number" id="age" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="button" onclick=" traiter_age()">Valider</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      // programme qui affiche salut qd on click sur un bouton
+      function saluer() {
+        alert("salut");
+      }
+
+      function bonjour() {
+        alert("bonjour");
+      }
+
+      function caluler_produit() {
+        let input1 = document.getElementById("n1");
+        let input2 = document.getElementById("n2");
+        //  alert(input1.value);
+        // alert(input2.value);
+        let produit = input1.value / input2.value;
+        alert("le produit des deux valeurs est :  " + produit);
+      }
+
+      function traiter_age() {
+        let input_age = document.getElementById("age");
+        alert("votre age est " + input_age.value);
+      }
+    </script>
+  </body>
+</html>
